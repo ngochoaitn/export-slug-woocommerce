@@ -1,7 +1,9 @@
 # Hướng dẫn Export slug trong woocommerce (giaiphapmmo.net)
 ## Bước 1: Thêm đoạn code sau vào file wp-function.php
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/Huong dan export slug.png?raw=true)
-`
+### Ảnh hướng dẫn sửa file function.php
+![Alt text](https://github.com/ngochoaitn/export-slug-woocommerce/blob/main/Huong-dan-export-slug.png?raw=true)
+### Đoạn code
+```
 // GPM Code export slug START
 add_filter( 'woocommerce_product_export_column_names', 'add_slug_export_column' );
 add_filter( 'woocommerce_product_export_product_default_columns', 'add_slug_export_column' );
@@ -42,4 +44,4 @@ function process_import_product_slug_column( $object, $data ) {
   return $object;
 }
 // GPM Code export slug END
-`
+```
